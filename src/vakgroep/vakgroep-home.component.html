@@ -1,0 +1,14 @@
+<h1>Angular GraphQL Demo client</h1>
+<div *ngIf="loading">
+    Loading...
+  </div>
+  <div *ngIf="error">
+    Error :(
+  </div>
+  <div *ngIf="vakgroepen">
+    <h2>Vakgroep home page</h2>
+    <div *ngFor="let vakgroep of vakgroepen">       
+      <h3>{{vakgroep.naam}}</h3>
+      <p>{{vakgroep.omschrijving}}</p>      
+    </div>
+  </div>
